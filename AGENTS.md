@@ -11,7 +11,7 @@ Home is the personal wiki and T3 starting point for planning, research, and work
 
 ## Delegate work
 
-Prefer delegates for work with a clear brief and a result the lead agent can verify. Use these defaults when creating delegates, subject to the task and target project's instructions.
+Run work from Home using the [delivery roles](docs/workflow.md#delivery-roles). Assign implementation and review revisions to implementers by default. The lead owns scope, handoffs, verification and landing. Use these model defaults, subject to the task and target project's instructions.
 
 | Role | Model | Reasoning effort |
 | --- | --- | --- |
