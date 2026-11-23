@@ -58,7 +58,11 @@ Shared library / asset sources and exports / evidence links
 
 ## Scored visual review
 
-Before calling a UI change finished, review the rendered screens or prototype and record the score with the change. Use a fresh reviewer when practical. Cite the exact board or captured screen, viewport, locale and state checked. Include the most relevant normal and recovery states and a compact or larger-text check when the change can affect layout.
+Before calling a delegated UI change finished, give a separate reviewer fresh context and have them score the rendered screens or prototype. The implementer verifies the artifact and supplies viewer links and reproducible scenarios. Cite the exact board or captured screen, viewport, locale and state checked. Include the most relevant normal and recovery states and a compact or larger-text check when the change can affect layout.
+
+1. **Review.** Brief the reviewer with the accepted design requirements, current artifact, representative scenarios and required test conditions. Keep the implementer's self-assessment and any prior findings or scores out of the brief and its references.
+2. **Revise.** Give the assigned implementer the findings with the affected state, expected behavior and evidence. Use a fix delegate for a scoped revision and handle small corrections directly. Verify the saved revision and hand back its current viewer links.
+3. **Review again.** Start a new reviewer with fresh context. Give them the same requirements and comparable conditions against the revised artifact. Keep the fix list, earlier verdict and earlier score out of the handoff. Compare the reviews after the new verdict is in.
 
 Score each criterion from 0 to 2. Use **0** for a blocking problem, **1** for a visible issue to correct and **2** when the inspected examples pass. Report the five scores and their total out of 10. If the earlier version is available under the same conditions, score it as well and show the change. Mark any unverified criterion pending and report a partial score against the points inspected.
 
