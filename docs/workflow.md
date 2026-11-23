@@ -12,6 +12,14 @@ Review each slice against its acceptance criteria and observed proof. Around 1,0
 
 Use the target project's pinned skills when working there. For wiki shaping in Home, consult the local skill checkout listed in `.local/README.md` if the harness does not expose `/grill-with-docs`. Record agreed vocabulary in the owning glossary.
 
+## Delivery roles
+
+- **Lead.** Settle scope with the user, identify the owning project, and give the implementer a brief with accepted requirements and proof. Coordinate dependencies, review handoffs and landing. Confirm the result against the brief and the project's delivery rules.
+- **Implementer.** Own implementation, verification and review revisions in the target project. After review, the lead assigns the findings and evidence to the existing implementer or a delegate for the scoped revision. The implementer returns the revised artifact and verification.
+- **Reviewer.** Independently evaluate the current artifact. Use the [blind visual review workflow](design-and-prototyping.md#scored-visual-review) for design scoring and the owning project's review rules for other work.
+
+Use the [delegate model defaults](../AGENTS.md#delegate-work). Apply explicit user instructions and required execution rules to the assignment for the current task.
+
 ## UI design
 
 For design and prototyping, use the [design and prototyping guide](design-and-prototyping.md) to plan actor workflows, organize the design file, and check the prototype before handoff.

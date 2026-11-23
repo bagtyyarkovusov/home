@@ -8,4 +8,6 @@ Keep an explicit `/implement-spec` pilot for a feature whose interactions need c
 
 Pin the shared skill set and confirm that the integration pilot fits T3 worktree handling and the target project's delivery rules before using it there. The [shared workflow](../workflow.md) is the current operating guide.
 
+Keep implementation and review revisions with an assigned implementer by default. This leaves the lead accountable for scope, review handoffs and landing, and gives each revision one owner who can report how it was verified. The [delivery roles](../workflow.md#delivery-roles) define the handoffs.
+
 [AI Hero feature walkthrough](https://www.aihero.dev/watch-me-ship-a-21-000-line-feature-with-mattpocock-skills~ez95n) · [Pocock's shipping options](https://www.aihero.dev/skills-changelog-v13-implement-spec-pr-retro-and-glossary-md)
