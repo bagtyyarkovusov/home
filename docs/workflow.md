@@ -12,6 +12,14 @@ Review each slice against its acceptance criteria and observed proof. Around 1,0
 
 Use the target project's pinned skills when working there. For wiki shaping in Home, consult the local skill checkout listed in `.local/README.md` if the harness does not expose `/grill-with-docs`. Record agreed vocabulary in the owning glossary.
 
+## UI design
+
+For design and prototyping, use the [design and prototyping guide](design-and-prototyping.md) to plan actor workflows, organize the design file, and check the prototype before handoff.
+
+Use Anthropic's `frontend-design` for visual design and redesign alongside the relevant project design skills. From Home, read `.agents/skills/frontend-design/SKILL.md` when the harness does not expose it. On another machine, use the pinned `skills/frontend-design/` from Agent-kit to set up that Home-local copy. For project work, use the project's installed UI set.
+
+For design review and copy edits, apply the **UI copy check** in the installed `product-design` skill or in Agent-kit's `skills/product-design/SKILL.md`. See `.local/design-workflow.md` for Penpot and Inkscape preferences when available.
+
 ## Where findings go
 
 - Project terminology or durable product decisions go to the project's glossary or ADRs. Use the issue and PR for delivery scope and proof.

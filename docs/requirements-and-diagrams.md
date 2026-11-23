@@ -15,4 +15,6 @@ Use this guide when shaping an MVP or reviewing a flow with unclear actors, auth
 
 For a payment sandbox, consider a lost response after a simulated QR payment posts. The acceptance criterion should say what the customer sees when retrying and that the journal records a single transfer. The test should exercise the retry after the first attempt has already posted.
 
+For a whole MVP, keep an architecture index in the owning project and link it from the specification. Use an actor and use-case map for scope, a system context diagram for trust and authority, and add lifecycle and logical data diagrams where state changes or data relationships enforce core behavior. Link detailed scenarios from the index. Review each diagram against the accepted decisions before landing it, and record open design choices in the index.
+
 Keep diagrams with the project decision or spec they explain. Link the source file when later sessions will need to update it. See `.local/README.md` for the course references when available.
