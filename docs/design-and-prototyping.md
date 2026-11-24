@@ -51,20 +51,30 @@ Shared library / asset sources and exports / evidence links
 ## Review checklist
 
 - [ ] Open each workflow's start link with reviewer access. Walk the main path and the acceptance-relevant failure paths in the viewer. Confirm each transition and outcome.
-- [ ] Inspect style bindings and component instances in the editor. In the viewer, check rendered control alignment and applicable interaction states.
+- [ ] In the viewer, check rendered control alignment and applicable interaction states. Inspect style bindings and component instances in the editor to corroborate or diagnose what you see.
 - [ ] Check the base and representative compact, localized, and larger-text cases for clipping, overlap, and reachable actions. Open any variants from the brief.
 - [ ] Check SVG source and exports at intended sizes. Record viewer links and observed acceptance outcomes in the project issue or spec.
 - [ ] For local Penpot MCP work, confirm the owner released the connection and the viewer still opens the saved design.
 
 ## Scored visual review
 
-Before calling a delegated UI change finished, give a separate reviewer fresh context and have them score the rendered screens or prototype. The implementer verifies the artifact and supplies viewer links and reproducible scenarios. Cite the exact board or captured screen, viewport, locale and state checked. Include the most relevant normal and recovery states and a compact or larger-text check when the change can affect layout.
+The lead routes each delegated UI change through an independent reviewer with fresh context. The implementer verifies the saved artifact and supplies current viewer links and reproducible scenarios. Follow the [delivery roles](workflow.md#delivery-roles).
 
-1. **Review.** Brief the reviewer with the accepted design requirements, current artifact, representative scenarios and required test conditions. Keep the implementer's self-assessment and any prior findings or scores out of the brief and its references.
-2. **Revise.** The lead assigns the findings to an implementer with the affected state, expected behavior and evidence. The implementer owns the scoped revision, verifies the saved artifact and returns current viewer links. Follow the [delivery roles](workflow.md#delivery-roles) for the assignment.
-3. **Review again.** Start a new reviewer with fresh context. Give them the same requirements and comparable conditions against the revised artifact. Keep the fix list, earlier verdict and earlier score out of the handoff. Compare the reviews after the new verdict is in.
+1. **Review.** Give the reviewer only the accepted brief, current saved artifact and required review conditions. Keep prior findings, fix details, scores, screenshots and implementer proof or self-assessment out of the handoff and references.
+2. **Revise.** The lead routes findings and evidence to an implementer with the affected state and expected behavior. The implementer owns the scoped revision, verifies the save and returns current viewer links.
+3. **Review again.** After revision, start a fresh reviewer with the same brief and comparable conditions for the revised artifact. Have them independently review the normal flow and applicable state transitions. The lead compares results after the new verdict and repeats the loop for material open findings.
 
-Score each criterion from 0 to 2. Use **0** for a blocking problem, **1** for a visible issue to correct and **2** when the inspected examples pass. Report the five scores and their total out of 10. If the earlier version is available under the same conditions, score it as well and show the change. Mark any unverified criterion pending and report a partial score against the points inspected.
+### Capture and inspect
+
+Each fresh reviewer must capture and personally open and inspect sharp screenshots of the current saved render before giving any score or pass. Capture the rendered viewer or app in T3 first. If capture fails, use a permitted rendered fallback when available, such as a full-resolution Penpot PNG for a static design. Verify that it matches the saved revision and requested conditions, and report the capture failure and any coverage gap.
+
+Inspect full screens in flow context at the intended presentation scale. Add close crops for details where helpful. A zoomed-out board or contact sheet alone is insufficient. Cover applicable changed and comparison states, including normal and recovery behavior, dark and light themes, compact layouts, locale and larger text as specified in the brief. Click through interactive states and time captures to show brief feedback such as pressed or loading states and any applicable retry transition.
+
+Use code, DOM or MCP inspection, tokens, bounds and contrast measurements to corroborate or diagnose after visual inspection. If any required render cannot be seen, return **Evidence incomplete**, identify the missing screens, states or conditions, and hold scoring and visual sign-off.
+
+### Score and report
+
+Score each criterion from 0 to 2 once the required visual evidence is complete. Use **0** for a blocking problem, **1** for a visible issue to correct and **2** when the inspected examples pass. Report the five scores and their total out of 10. If the brief includes a comparison artifact, capture and inspect it under equivalent conditions before scoring it separately.
 
 | Criterion | What to inspect |
 | --- | --- |
@@ -74,4 +84,4 @@ Score each criterion from 0 to 2. Use **0** for a blocking problem, **1** for a 
 | Accessibility and layout | Contrast, visible focus, compact layouts, localized text and larger text behave as applicable. |
 | State and motion | Feedback, transitions and recovery make the current state and next action clear. |
 
-List concrete findings with the affected screen and condition. Fix confirmed issues, rerun the affected checks, and record the revised score and remaining gaps before handoff.
+Report stable screenshot paths or links with the board or route, viewport, zoom, theme, locale, type scale and state as applicable. For each finding, cite the matching evidence and record its priority and observed visual effect on the user. Carry any remaining evidence gaps into the handoff.
