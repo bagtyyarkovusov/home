@@ -48,7 +48,17 @@ Localized copy / larger-text setting / variant and trigger if needed
 Shared library / asset sources and exports / evidence links
 ```
 
+## Choose the review depth
+
+The implementer verifies the saved change against its acceptance criteria. A Penpot index needs its changed links and destinations checked. File organization needs a check that people can find the current work and that existing links still resolve. A small copy or layout fix needs a check of the affected state.
+
+Choose independent review when it can inform a consequential product decision or release sign-off. Good candidates include payment approval and recovery, enrollment and access gates, critical accessibility, and a shared component change with broad effects. Agree on the workflow, the decision the review should inform, and the evidence needed. Use project review requirements and checkpoints already agreed with the user.
+
+Use a numeric score only when the user requests one or a project has already agreed to use a scored rubric for that checkpoint. A focused review can report the decision, findings and evidence in plain language. Prioritize findings that change how users understand, reach or complete the task. Group related fixes and recheck only the affected conditions unless the changes create a new material question.
+
 ## Review checklist
+
+Use the checks relevant to the work and the selected review scope.
 
 - [ ] Open each workflow's start link with reviewer access. Walk the main path and the acceptance-relevant failure paths in the viewer. Confirm each transition and outcome.
 - [ ] In the viewer, check rendered control alignment and applicable interaction states. Inspect style bindings and component instances in the editor to corroborate or diagnose what you see.
@@ -58,11 +68,11 @@ Shared library / asset sources and exports / evidence links
 
 ## Scored visual review
 
-The lead routes each delegated UI change through an independent reviewer with fresh context. The implementer verifies the saved artifact and supplies current viewer links and reproducible scenarios. Follow the [delivery roles](workflow.md#delivery-roles).
+Use this workflow at an agreed scored checkpoint. The implementer verifies the saved artifact and supplies current viewer links and reproducible scenarios. The lead briefs an independent reviewer with fresh context. Follow the [delivery roles](workflow.md#delivery-roles).
 
 1. **Review.** Give the reviewer only the accepted brief, current saved artifact and required review conditions. Keep prior findings, fix details, scores, screenshots and implementer proof or self-assessment out of the handoff and references.
 2. **Revise.** The lead routes findings and evidence to an implementer with the affected state and expected behavior. The implementer owns the scoped revision, verifies the save and returns current viewer links.
-3. **Review again.** After revision, start a fresh reviewer with the same brief and comparable conditions for the revised artifact. Have them independently review the normal flow and applicable state transitions. The lead compares results after the new verdict and repeats the loop for material open findings.
+3. **Recheck.** Verify the affected scenarios in the revised artifact. Use a fresh independent reviewer under comparable conditions when a material finding still affects the sign-off decision.
 
 ### Capture and inspect
 
