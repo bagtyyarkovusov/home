@@ -16,7 +16,7 @@ Use the target project's pinned skills when working there. For wiki shaping in H
 
 - **Lead.** Settle scope with the user, identify the owning project, and give the implementer a brief with accepted requirements and proof. Coordinate dependencies, review handoffs and landing. Confirm the result against the brief and the project's delivery rules.
 - **Implementer.** Own implementation, verification and review revisions in the target project. After review, the lead assigns the findings and evidence to the existing implementer or a delegate for the scoped revision. The implementer returns the revised artifact and verification.
-- **Reviewer.** Independently evaluate the current artifact. Use the [blind visual review workflow](design-and-prototyping.md#scored-visual-review) for design scoring and the owning project's review rules for other work.
+- **Reviewer.** Independently evaluate the current artifact against the assigned decision. Use the [scored visual review workflow](design-and-prototyping.md#scored-visual-review) when a scored checkpoint was agreed, and the owning project's review rules for other work.
 
 Use the [delegate model defaults](../AGENTS.md#delegate-work). Apply explicit user instructions and required execution rules to the assignment for the current task.
 
@@ -24,9 +24,11 @@ Use the [delegate model defaults](../AGENTS.md#delegate-work). Apply explicit us
 
 For design and prototyping, use the [design and prototyping guide](design-and-prototyping.md) to plan actor workflows, organize the design file, and check the prototype before handoff.
 
+Match [review depth](design-and-prototyping.md#choose-the-review-depth) to the impact of the change. Verify routine edits directly. Agree on independent review for consequential UI decisions and use the rubric when a numeric score serves the agreed checkpoint.
+
 Use Anthropic's `frontend-design` for visual design and redesign alongside the relevant project design skills. From Home, read `.agents/skills/frontend-design/SKILL.md` when the harness does not expose it. On another machine, use the pinned `skills/frontend-design/` from Agent-kit to set up that Home-local copy. For project work, use the project's installed UI set.
 
-For design review and copy edits, apply the **UI copy check** in the installed `product-design` skill or in Agent-kit's `skills/product-design/SKILL.md`. See `.local/design-workflow.md` for Penpot and Inkscape preferences when available.
+When reviewing or changing user-facing copy, apply the **UI copy check** in the installed `product-design` skill or in Agent-kit's `skills/product-design/SKILL.md`. See `.local/design-workflow.md` for Penpot and Inkscape preferences when available.
 
 ## Where findings go
 
