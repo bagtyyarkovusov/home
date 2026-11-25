@@ -10,15 +10,19 @@ For a new MVP, read the existing product decisions and use the [scenario and dia
 
 Review each slice against its acceptance criteria and observed proof. Around 1,000 handwritten changed lines is a prompt to discuss scope. Split when outcomes can be reviewed and landed independently. Give more human attention to changes that are difficult to reverse or have broad effects. Apply the project's review, CI, merge authorization, and runtime proof rules.
 
-Use the target project's pinned skills when working there. For wiki shaping in Home, consult the local skill checkout listed in `.local/README.md` if the harness does not expose `/grill-with-docs`. Record agreed vocabulary in the owning glossary.
+For wiki shaping in Home, consult the local skill checkout listed in `.local/README.md` if the harness does not expose `/grill-with-docs`. Record agreed vocabulary in the owning glossary.
 
 ## Delivery roles
 
-- **Lead.** Settle scope with the user, identify the owning project, and give the implementer a brief with accepted requirements and proof. Coordinate dependencies, review handoffs and landing. Confirm the result against the brief and the project's delivery rules.
-- **Implementer.** Own implementation, verification and review revisions in the target project. After review, the lead assigns the findings and evidence to the existing implementer or a delegate for the scoped revision. The implementer returns the revised artifact and verification.
+- **Lead.** Keep one active Home lead for intake, scope, dependency and ownership handoffs, the PR watch, and landing. Carry forward agreed scope and confirm the result against the issue and the owning project's delivery rules. At handoff, record the outcome, next issue, blockers, implementer, merge authority, and who owns any active watch or runtime.
+- **Implementer.** Own the candidate, proof and finding decisions in the target project. Bring forward the current proof and its limits. Reuse evidence that still covers the candidate and rerun what the change invalidates. Verify review findings, record reasons for dismissals, batch material fixes and follow the project's re-review rules.
 - **Reviewer.** Independently evaluate the current artifact against the assigned decision. Use the [scored visual review workflow](design-and-prototyping.md#scored-visual-review) when a scored checkpoint was agreed, and the owning project's review rules for other work.
 
-Use the [delegate model defaults](../AGENTS.md#delegate-work). Apply explicit user instructions and required execution rules to the assignment for the current task.
+Home governs intake, coordination and handoff. The owning repository governs implementation, runtime proof, model and effort, code review, UI review, CI and merge. Use Home or Agent-kit skills and [Home's delegate defaults](../AGENTS.md#delegate-work) for Home-owned work and where the owning project has no local rule. Apply explicit user instructions and execution rules to the assignment.
+
+In the implementation brief, name the owning repository, target T3 project, issue and base. Link that repository's `AGENTS.md` and exact pinned skill file at the stated base, and ask the implementer to verify the checkout before starting. Resolve same-named skills from that checkout. Foreground the agreed acceptance criteria, material failure modes and proof that would settle them. Give a fresh reviewer only the approved spec, current proof and its limits, pinned candidate and base, and target repository and skill references.
+
+T3's local `delegate_task` runs in the calling thread's project. Coordinate from Home and use the existing target-project thread to dispatch work that needs a worktree there. Keep one lead and one PR watch across the handoff.
 
 ## UI design
 
