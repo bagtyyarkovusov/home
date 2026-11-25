@@ -8,6 +8,12 @@ In the Carberk T3 project, read [Carberk's `AGENTS.md`](https://github.com/Carbe
 
 For a Carberk PR, the [implementation brief](../docs/workflow.md#delivery-roles) points to Carberk's `AGENTS.md`, [pinned Sol review skill](https://github.com/Carberk/carberk/blob/main/.claude/skills/sol-loop/SKILL.md) and [coding workflow](https://github.com/Carberk/carberk/blob/main/docs/agents/coding-workflow.md) at the stated base. Dispatch Carberk worktrees from the existing Carberk-project thread. Keep private thread and machine references in Home's local project note.
 
+## Turkmenistan staging gateway
+
+For operator SSH, open `.local/projects/tm-vps.md` from the primary Home checkout. It points to the pinned SSH profile, the Wi-Fi route, and the private recovery backup. Use the configured host alias and keep strict host-key verification enabled. If the server presents a changed key, verify its fingerprint through the provider console or an already trusted shell. [Gateway access runbook](https://github.com/Carberk/carberk/blob/main/docs/prd/ops/staging-gateway.md#connect-to-the-turkmenistan-staging-gateway)
+
+Check authenticated gateway health and readiness, including the served staging revision, before starting feature proof. Use an approved synthetic fixture for the actual feature check. The VPS also hosts Snikket. Follow Carberk's runbooks for gateway changes and coordinate any work on shared ingress with its owner. [Gateway operations](https://github.com/Carberk/carberk/blob/main/docs/prd/ops/staging-gateway.md) · [Reverse connector](https://github.com/Carberk/carberk/blob/main/docs/prd/ops/staging-egress.md)
+
 ## Two-PR Home-led pilot
 
 The current Carberk lead owns [#1193](https://github.com/Carberk/carberk/issues/1193) through protected merge and cleanup. Start with [#1194](https://github.com/Carberk/carberk/issues/1194) after #1193 merges and the outgoing lead explicitly hands over. Choose the second PR from the ready, approved scope. Home coordinates the two PRs under the existing Carberk review, UI, CI and merge rules.
